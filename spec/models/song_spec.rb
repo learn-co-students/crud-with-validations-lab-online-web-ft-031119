@@ -15,9 +15,9 @@ RSpec.describe Song, type: :model do
   let(:valid_release_year) {attributes.merge(release_year: 2016, released: true)}
 
 
-  # it "is considered valid" do
-  #   expect(Song.new(attributes)).to be_valid
-  # end
+  it "is considered valid" do
+    expect(Song.new(attributes)).to be_valid
+  end
 
   it "is invalid without title" do
     expect(Song.new(missing_title)).not_to be_valid
