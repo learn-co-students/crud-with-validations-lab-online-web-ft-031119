@@ -11,10 +11,10 @@
     <%= text_field_tag "released", @song.released %>
   </div>
 
-  <div class="field<%= ' field_with_errors' if @song.errors[:released_year].any? %>">
+  <div class="field<%= ' field_with_errors' if @song.errors[:release_year].any? %>">
     <%= label_tag "released_year", "released_year" %>
     <p>Must be either "Fiction" or "Non-Fiction".</p>
-    <%= text_field_tag "released_year", @song.released_year %>
+    <%= text_field_tag "release_year", @song.release_year %>
   </div>
 
   <div class="field<%= ' field_with_errors' if @song.errors[:artist_name].any? %>">
